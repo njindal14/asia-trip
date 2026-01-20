@@ -1028,22 +1028,128 @@
             </div>
 
             <div id="logistics" class="tab-content">
-                <div class="day-card" style="cursor:default;">
-                    <div class="card-body" style="max-height:none;">
-                        <div class="card-inner" style="border:none; padding-top:30px;">
-                            <h3 class="gold-text" style="font-family:var(--font-header);">FLIGHT SCHEDULE</h3>
-                            <table class="log-table">
-                                <thead><tr><th>GROUP</th><th>ROUTE</th><th>DATE</th></tr></thead>
-                                <tbody>
-                                    <tr><td>M / K / G</td><td>JFK &rarr; HND</td><td>Jan 24</td></tr>
-                                    <tr><td>Alexa</td><td>TPE &rarr; HND</td><td>Jan 24</td></tr>
-                                    <tr><td>Nick / Tessa</td><td>ORD &rarr; HND</td><td>Jan 25</td></tr>
-                                    <tr><td>Full Group</td><td>KIX &rarr; HKT</td><td>Feb 5</td></tr>
-                                    <tr><td>Campbell</td><td>HKT Arrival</td><td>Feb 5</td></tr>
-                                    <tr><td>Return</td><td>HKT &rarr; ICN</td><td>Feb 12</td></tr>
-                                </tbody>
-                            </table>
-                            <h3 class="gold-text" style="font-family:var(--font-header); margin-top:40px;">HOTEL DATABASE</h3>
+                
+                <div style="text-align:center; padding: 20px 0;">
+                    <h3 class="gold-text" style="font-family:var(--font-header); letter-spacing:2px;">PERSONNEL FLIGHT MANIFEST</h3>
+                </div>
+
+                <div class="day-card">
+                    <div class="card-header" onclick="toggleCard(this)">
+                        <div><span class="event-title" style="color:white;">MICHELLE / KUMUD / GAGAN</span></div>
+                        <i class="fa-solid fa-chevron-down expand-icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-inner">
+                            <h4 class="gold-text" style="font-size:0.8rem; margin-bottom:10px;">ARRIVAL (JAN 23-24)</h4>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>AA167:</strong> Dep JFK 10:00 AM (Jan 23) &rarr; Arr HND 2:35 PM (Jan 24).</div></div>
+                            
+                            <h4 class="gold-text" style="font-size:0.8rem; margin:20px 0 10px 0;">MID-TRIP (FEB 5)</h4>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>MH53:</strong> Dep KIX 09:55 AM &rarr; Arr KUL 03:55 PM.</div></div>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>MH790:</strong> Dep KUL 05:05 PM &rarr; Arr HKT 05:35 PM.</div></div>
+
+                            <h4 class="gold-text" style="font-size:0.8rem; margin:20px 0 10px 0;">RETURN (FEB 12-13)</h4>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>KE678:</strong> Dep HKT 11:40 PM (Feb 12) &rarr; Arr ICN 07:35 AM.</div></div>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>DL7841:</strong> Dep ICN 10:00 AM &rarr; Arr JFK 10:00 AM.</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="card-header" onclick="toggleCard(this)">
+                        <div><span class="event-title" style="color:white;">NICK & TESSA</span></div>
+                        <i class="fa-solid fa-chevron-down expand-icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-inner">
+                            <h4 class="gold-text" style="font-size:0.8rem; margin-bottom:10px;">ARRIVAL (JAN 25)</h4>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>ORD &rarr; HND:</strong> Arr 5:45 PM (Jan 25).</div></div>
+
+                            <h4 class="gold-text" style="font-size:0.8rem; margin:20px 0 10px 0;">MID-TRIP (FEB 5)</h4>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>MH53:</strong> Dep KIX 09:55 AM &rarr; Arr KUL 03:55 PM.</div></div>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>MH790:</strong> Dep KUL 05:05 PM &rarr; Arr HKT 05:35 PM.</div></div>
+
+                            <h4 class="gold-text" style="font-size:0.8rem; margin:20px 0 10px 0;">RETURN (FEB 12-13)</h4>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>KE678:</strong> Dep HKT 11:40 PM (Feb 12) &rarr; Arr ICN 07:35 AM.</div></div>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>KE37:</strong> Dep ICN 10:40 AM &rarr; Arr ORD 08:40 AM.</div></div>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>UA1020:</strong> Dep ORD 12:50 PM &rarr; Arr CMH 03:16 PM (Feb 13).</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="card-header" onclick="toggleCard(this)">
+                        <div><span class="event-title" style="color:white;">ALEXA</span></div>
+                        <i class="fa-solid fa-chevron-down expand-icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-inner">
+                            <h4 class="gold-text" style="font-size:0.8rem; margin-bottom:10px;">ARRIVAL (JAN 24)</h4>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>TPE &rarr; HND:</strong> [Details TBD]</div></div>
+
+                            <h4 class="gold-text" style="font-size:0.8rem; margin:20px 0 10px 0;">MID-TRIP (FEB 5)</h4>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>MH53:</strong> Dep KIX 09:55 AM &rarr; Arr KUL 03:55 PM.</div></div>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>MH790:</strong> Dep KUL 05:05 PM &rarr; Arr HKT 05:35 PM.</div></div>
+
+                            <h4 class="gold-text" style="font-size:0.8rem; margin:20px 0 10px 0;">RETURN (FEB 12)</h4>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane-slash"></i></div><div class="detail-text"><strong>Departure from HKT:</strong> TBD (Separate Itinerary).</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="card-header" onclick="toggleCard(this)">
+                        <div><span class="event-title" style="color:white;">CAMPBELL</span></div>
+                        <i class="fa-solid fa-chevron-down expand-icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-inner">
+                            <h4 class="gold-text" style="font-size:0.8rem; margin-bottom:10px;">ARRIVAL (FEB 5)</h4>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-plane"></i></div><div class="detail-text"><strong>Arrival HKT:</strong> [Details TBD]</div></div>
+                            <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-handshake"></i></div><div class="detail-text">Rendezvous at The Shore at Katathani.</div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card">
+                    <div class="card-header" onclick="toggleCard(this)">
+                        <div><span class="event-title" style="color:white;">TRAIN NETWORK TRANSFERS</span></div>
+                        <i class="fa-solid fa-chevron-down expand-icon"></i>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-inner">
+                            <h4 class="gold-text" style="font-size:0.8rem; margin-bottom:10px;">JAN 27: TOKYO &rarr; NAGANO</h4>
+                            <div class="detail-row">
+                                <div class="detail-icon"><i class="fa-solid fa-train-subway"></i></div>
+                                <div class="detail-text">
+                                    <strong>Shinkansen:</strong> Dep 08:33 AM &rarr; Arr 09:56 AM.<br>
+                                    <a href="#" class="btn-pdf" style="margin-top:10px; font-size:0.7rem;" onclick="switchTab('archive')"><i class="fa-regular fa-file-pdf"></i> View Ticket</a>
+                                </div>
+                            </div>
+
+                            <h4 class="gold-text" style="font-size:0.8rem; margin:20px 0 10px 0;">FEB 1: NAGANO &rarr; KYOTO</h4>
+                            <div class="detail-row">
+                                <div class="detail-icon"><i class="fa-solid fa-train"></i></div>
+                                <div class="detail-text"><strong>Leg 1:</strong> Nagano (08:39 AM) &rarr; Tsuruga (10:28 AM).</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                                <div class="detail-text"><strong>Transfer:</strong> 16 Min Connection at Tsuruga.</div>
+                            </div>
+                            <div class="detail-row">
+                                <div class="detail-icon"><i class="fa-solid fa-train"></i></div>
+                                <div class="detail-text">
+                                    <strong>Leg 2:</strong> Tsuruga (10:44 AM) &rarr; Kyoto (11:39 AM).<br>
+                                    <a href="#" class="btn-pdf" style="margin-top:10px; font-size:0.7rem;" onclick="switchTab('archive')"><i class="fa-regular fa-file-pdf"></i> View Ticket</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="day-card" style="cursor: default;">
+                    <div class="card-body" style="max-height: none;">
+                        <div class="card-inner" style="border:none; padding-top:20px;">
+                            <h3 class="gold-text" style="font-family: var(--font-header); margin-bottom:20px;">HOTEL DATABASE</h3>
                             <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-hotel"></i></div><div class="detail-text"><strong>Tokyo:</strong> The Gate Hotel Tokyo by Hulic</div></div>
                             <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-house-chimney"></i></div><div class="detail-text"><strong>Hakuba:</strong> Hakuba Gondola Apartments</div></div>
                             <div class="detail-row"><div class="detail-icon"><i class="fa-solid fa-hotel"></i></div><div class="detail-text"><strong>Kyoto:</strong> The Gate Hotel Kyoto Takasegawa</div></div>
@@ -1116,6 +1222,7 @@
                             <a href="PhuketFlights.pdf" class="btn-pdf" style="width:100%"><i class="fa-regular fa-file-pdf"></i> Phuket Flight Manifest</a>
                             <a href="IslandTours.pdf" class="btn-pdf" style="width:100%"><i class="fa-regular fa-file-pdf"></i> Island Tour Vouchers</a>
                             <a href="ReturnInfo.pdf" class="btn-pdf" style="width:100%"><i class="fa-regular fa-file-pdf"></i> Return Taxi/Flight</a>
+                            <a href="Itinerary.pdf" class="btn-pdf" style="width:100%"><i class="fa-regular fa-file-pdf"></i> Full Itinerary</a>
                             <a href="TessaGF.pdf" class="btn-pdf" style="width:100%; color:#00e6b8; border-color:#00e6b8;"><i class="fa-solid fa-leaf"></i> Tessa GF Card (Japan)</a>
                         </div>
                     </div>
@@ -1149,26 +1256,26 @@
 
     <script>
         const missionIntel = {
-            "2026-01-24": "MISSION START: Tokyo Infiltration. M/K/G/A arriving at Haneda.",
-            "2026-01-25": "TOKYO OPS: Sensoji Temple (09:30). Sky Tree (14:30). Nick & Tessa Arrival.",
-            "2026-01-26": "TOKYO OPS: Shibuya Sky (13:40). Shinjuku Food Tour (18:00).",
+            "2026-01-24": "Trip START: Tokyo Infiltration. M/K/G/A arriving at Haneda.",
+            "2026-01-25": "TOKYO: Sensoji Temple (09:30). Sky Tree (14:30). Nick & Tessa Arrival.",
+            "2026-01-26": "TOKYO: Shibuya Sky (13:40). Shinjuku Food Tour (18:00).",
             "2026-01-27": "TRANSFER: Bullet train to Nagano. Snow Monkey & Sake Tour.",
-            "2026-01-28": "ALPINE OPS: Hakuba Private Ski Lessons (08:30).",
-            "2026-01-29": "ALPINE OPS: Full group training at Hakuba slopes (10:00).",
-            "2026-01-30": "ALPINE OPS: Free ski maneuvers in Hakuba sector.",
-            "2026-01-31": "ALPINE OPS: Final mountain recon. Dinner in Hakuba Village.",
+            "2026-01-28": "ALPINE: Hakuba Private Ski Lessons (08:30).",
+            "2026-01-29": "ALPINE: Full group training at Hakuba slopes (10:00).",
+            "2026-01-30": "ALPINE: Free ski maneuvers in Hakuba sector.",
+            "2026-01-31": "ALPINE: Final mountain recon. Dinner in Hakuba Village.",
             "2026-02-01": "TRANSFER: Relocating to Kyoto via Tsuruga. ETA 11:39.",
-            "2026-02-02": "KYOTO OPS: Arashiyama Bamboo Grove & Monkey Park.",
-            "2026-02-03": "KYOTO OPS: Kurama-Kibune Mountain Trek. Golden Temple.",
-            "2026-02-04": "KYOTO OPS: Fushimi Inari Torii Gate hike (09:00).",
-            "2026-02-05": "PHUKET DEPLOYMENT: Fly KIX-HKT via KUL. Campbell joins mission.",
-            "2026-02-06": "ISLAND OPS: Resort Acclimatization at Katathani Pool Villas.",
-            "2026-02-07": "ISLAND OPS: Coastal Recon. Kata Noi Beach sector.",
-            "2026-02-08": "ISLAND OPS: Phi Phi Speedboat Excursion.",
-            "2026-02-09": "ISLAND OPS: Mid-mission repose and recovery.",
-            "2026-02-10": "ISLAND OPS: Phang Nga Bay / James Bond Island recon.",
-            "2026-02-11": "ISLAND OPS: Final beach maneuvers. Farewell dinner ops.",
-            "2026-02-12": "EXFILTRATION: Final repose. 20:00 Transfer to HKT."
+            "2026-02-02": "KYOTO: Arashiyama Bamboo Grove & Monkey Park.",
+            "2026-02-03": "KYOTO: Kurama-Kibune Mountain Trek. Golden Temple.",
+            "2026-02-04": "KYOTO: Fushimi Inari Torii Gate hike (09:00).",
+            "2026-02-05": "PHUKET SECTION: Fly KIX-HKT via KUL. Campbell joins trip.",
+            "2026-02-06": "ISLAND: Resort Acclimatization at Katathani Pool Villas.",
+            "2026-02-07": "ISLAND: Coastal exploration. Kata Noi Beach sector.",
+            "2026-02-08": "ISLAND: Phi Phi Speedboat Excursion.",
+            "2026-02-09": "ISLAND: Mid-trip repose and recovery.",
+            "2026-02-10": "ISLAND: Phang Nga Bay / James Bond Island.",
+            "2026-02-11": "ISLAND: Final beach day. Farewell dinner ops.",
+            "2026-02-12": "Departure: Final repose. 20:00 Transfer to HKT."
         };
 
         function checkPassword() {
