@@ -607,7 +607,7 @@
         </header>
 
         <div class="command-center fade-in">
-            <div class="intel-badge">LIVE MISSION INTEL</div>
+            <div class="intel-badge">LIVE SCHEDULE</div>
             <div id="today-date" class="intel-date">-- -- ----</div>
             <div id="today-agenda" class="intel-agenda">Establishing satellite connection...</div>
         </div>
@@ -1255,7 +1255,7 @@
                 <div class="day-card" style="cursor:default;">
                     <div class="card-body" style="max-height:none;">
                         <div class="card-inner" style="border:none; padding-top:30px;">
-                            <h3 class="gold-text" style="font-family:var(--font-header);">FIELD LOG TRANSMISSION</h3>
+                            <h3 class="gold-text" style="font-family:var(--font-header);">TRAVEL LOG</h3>
                             <p style="color:var(--text-muted); font-size:0.9rem; line-height:1.6; margin-bottom:25px;">
                                 <strong>INSTRUCTIONS:</strong> To log a memory or status update, enter the <strong>DATE</strong> and <strong>WHO</strong> is typing in the identity box. Type your entry and hit transmit. This will securely email the log to Nick for the permanent archive.
                             </p>
@@ -1266,7 +1266,7 @@
                                 <div class="form-group">
                                     <textarea name="entry" class="form-control" rows="6" placeholder="Enter details..." required></textarea>
                                 </div>
-                                <button type="submit" class="btn-submit">TRANSMIT TO COMMAND</button>
+                                <button type="submit" class="btn-submit">SUBMIT</button>
                             </form>
                         </div>
                     </div>
@@ -1327,9 +1327,9 @@
                 const diff = tripStart - current;
                 const days = Math.floor(diff / (1000 * 60 * 60 * 24));
                 const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                document.getElementById('today-agenda').innerHTML = `MISSION COUNTDOWN: <span style="color:var(--gold-primary); font-weight:bold;">${days} DAYS, ${hours} HOURS</span>`;
+                document.getElementById('today-agenda').innerHTML = `TRIP COUNTDOWN: <span style="color:var(--gold-primary); font-weight:bold;">${days} DAYS, ${hours} HOURS</span>`;
             } else if (current > tripEnd) {
-                document.getElementById('today-agenda').innerText = "ADVENTURE COMPLETE. MISSION ARCHIVED.";
+                document.getElementById('today-agenda').innerText = "TRIP COMPLETE.";
             } else {
                 const y = now.getFullYear();
                 const m = String(now.getMonth() + 1).padStart(2, '0');
